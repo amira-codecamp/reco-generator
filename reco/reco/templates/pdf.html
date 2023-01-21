@@ -30,7 +30,7 @@
 		function load(){
 			const rate = ['1', '2', '3', '4', '5'];
 			const level = ['Bad', 'Acceptable', 'Medium', 'Good', 'Very good'];
-			const color = ['#e63900', '#e68a00', '#ff6600', '#009933', 'DarkGreen']
+			const color = ['#e63900', '#ff6600', '#e68a00', '#009933', 'DarkGreen']
 			document.getElementById('motiv').value = level[rate.indexOf('{{motivation}}')];
 			document.getElementById('motiv').style.color = color[rate.indexOf('{{motivation}}')];
 			document.getElementById('solve').value = level[rate.indexOf('{{solving}}')];
