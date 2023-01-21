@@ -127,7 +127,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-WKHTMLTOPDF_CMD = '/Users/pc/Desktop/reco/lib/python3.9/site-packages/wkhtmltopdf'
+WKHTMLTOPDF_CMD = 'wkhtmltopdf' # update path
 WKHTMLTOPDF_CMD_OPTIONS = {
     'quiet': True,
 }

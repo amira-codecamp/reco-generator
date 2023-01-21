@@ -14,7 +14,7 @@ def pdf(request):
     context['email'] = data.get('email')
     context['candidate'] = data.get('candidate')
     context['position'] = data.get('position')
-    context['motivation'] = data.get('position')
+    context['motivation'] = data.get('motivation')
     context['solving'] = data.get('solving')
     context['communication'] = data.get('communication')
     context['teamwork'] = data.get('teamwork')
@@ -22,7 +22,7 @@ def pdf(request):
     context['creativity'] = data.get('creativity')
     context['text'] = data.get('text')
     template_name = 'reco/templates/pdf.html'
-    cmd_options={'orientation':'Portrait', 'page-size':'A4' }
+    cmd_options={'orientation':'Portrait', 'page-size':'A4', 'margin-top':'80px', 'margin-bottom':'80px', 'margin-left':'80px', 'margin-right':'80px'}
     pdf_ = render_pdf_from_template(template_name, header_template=None, footer_template=None, context=context, cmd_options=cmd_options, request=request)
     response = HttpResponse(pdf_, content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="reference-letter.pdf"'
