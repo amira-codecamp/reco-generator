@@ -1,4 +1,4 @@
 # build_files.sh
-MYDIR="$(dirname "$(realpath "$0")")"
-pip install -r MYDIR+requirements.txt
+MYFILE="$(dirname "$(realpath "$0")")" + 'requirements.txt'
+pip install -r MYFILE
 python3.9 manage.py collectstatic
