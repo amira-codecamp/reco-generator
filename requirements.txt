@@ -1,0 +1,3 @@
+django-wkhtmltopdf
+python-docx
+Django
