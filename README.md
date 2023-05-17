@@ -1,6 +1,5 @@
-# 
-Automatic generator for creating and uploading letters of recommendation.
-# 
-Available formats : PDF, Docx.
-# Demo
-http://amira2codecamp.pythonanywhere.com/polls/index/
+## reco-generator
+reco-generator is a builder of academic recommendation letters.  <br>
+
+## Usage
+Access my [web service](http://amira2codecamp.pythonanywhere.com/polls/index/) for demo.
